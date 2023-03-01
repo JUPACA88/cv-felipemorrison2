@@ -1,0 +1,314 @@
+/********fuentes**********/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&display=swap');
+
+
+*{
+    font-family: "EB+Garamond";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*********primera parte*********/
+.inicio{
+    background-color: linear-gradient(rgba(0,0,0,.3)rgba(0,0,0,.3)),
+    /*url("/imagenes/fondo.jpg");*/
+    background-size: cover;
+    background-position: center center;
+    color: rgb(10, 10, 10);
+    }
+.inicio .contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.inicio .contenido-seccion header{
+    padding: 30px;
+}
+
+/************menu lateral*************/
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: rgb(141, 135, 127);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99; 
+    display: none; 
+}
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: #0b0b0b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* **********varios****************/
+.inicio .contenido-seccion header .logo {
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Lobster";
+    text-shadow: 0 0 35px #312f2f;
+
+}
+.inicio .contenido-seccion header .logo .color {
+    color: #9f6e6e;
+    font-family: "EB+Garamond";
+}
+
+.inicio .contenido-seccion header .nav-bar {
+    position: fixed;
+    background-color: #887b82;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;   
+
+}
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px #887b82 ;
+}
+.inicio .contenido-seccion .info{
+    padding: 130px;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+.inicio .contenido-seccion .info .redes{
+    margin: 20px 0;
+}
+
+.inicio .contenido-seccion .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(15, 15, 15);
+    color: #940253;
+    border: 1px solid #940253;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 50px;
+    transition: .3s;
+}
+.inicio .contenido-seccion .info .redes a:hover{
+    color: #fff;
+    background-color: #940253;
+    box-shadow: 0 0 15px #fff;
+
+}
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+.inicio .contenido-seccion .foto img{
+    max-width: 150px;
+    border-radius: 50%;
+    border: 5px solid #050505;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translatex(-50%);
+}
+
+/******* varios para titulos de seccion********/
+.titulo-seccion{
+    font-family: "Lobster";
+    font-size: 2.5rem;
+}
+/******* Sobre Mi********/
+.sobremi{
+    background-color: #c6c4c4;
+    padding: 140px 0 100px 0;
+    text-align: center;
+
+}
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: ; 10px;
+        
+}
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase ;
+    font-size: 25px;
+}
+.sobremi .contenido-seccion .especial{
+    color: #940253;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.sobremi .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+}
+/* forma filas sobre el contenido de la seccion sobre mi*/
+.sobremi .contenido-seccion .fila{
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+}
+.sobremi .contenido-seccion .fila .col{
+    width: 30%;
+}
+/* borde sobre icono*/
+.sobremi .contenido-seccion .fila .col i{
+    color: #940253;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.sobremi .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 9px 0;
+}
+/***************Mis Competencias***********/
+.habilidades{
+    padding: 80px 0 100px 0;
+    text-align: center;
+}
+.habilidades .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding:0 10px;
+}
+.habilidades .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+/****** columnas para la info****/
+.habilidades .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.habilidades .contenido-seccion .fila .col{
+    width: 47%;
+    text-align: left;
+}
+.habilidades .contenido-seccion .fila .col .cont-barra{
+    display: flex;
+    text-align: center;
+}
+.habilidades .contenido-seccion .barra{
+    display: flex;
+    border: 1px solid #940253;
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.habilidades .contenido-seccion .barra .e{
+    background-color: #050505;
+    width: 20px;
+    height: 30px;
+    margin-right: 2px;
+}
+/********Resumen*****/
+.resumen{
+    background-color: #c6c4c4;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.resumen .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.resumen .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.resumen .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.resumen .contenido-seccion .info .col{
+    width: 45%;
+}
+.resumen .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: #4b022a;
+    font-weight: bold;
+    border: 2px solid #4b022a;
+    padding: 10px;
+}
+.resumen .contenido-seccion .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+
+}
+.resumen .contenido-seccion .info .col table .datos{
+    width: 40%;
+    border-bottom: 1px solid #312f2f;
+}
+.resumen .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+}
+.resumen .contenido-seccion .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.resumen .contenido-seccion .info .col table p{
+    font-size: 14px;
+}
+.resumen .contenido-seccion .info .col table .promedio{
+    display: block;
+    color: #4b022a;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.resumen .contenido-seccion .info .col table .descripcion{
+    border-left: 1px solid #4b022a;
+    padding: 20px;
+}
+/******Contacto******/
+.contacto{
+    background-color: #4b022a;
+    padding: 140px 0 100px 0;
+    color: #fff;
+    text-align: center;
+}
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 40px;
+}
+
+.contacto .contenido-seccion .fila .col h2{
+    color: #887b82;
+}
